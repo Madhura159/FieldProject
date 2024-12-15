@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Store Management</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Header Section -->
+     <header class="bg-primary text-white text-center py-3">
+        <h1>Samsung Store Management System</h1>
+        <h2>Project Report on Samsung Store Visit</h2>
+    </header>
+
+     <!-- Main Content Container -->
+     <div class="container my-4">
+
+    <!-- Project Information Section -->
+    <div class="container my-4">
+     <h3>Project Title: Field Visit to Samsung Store</h3><br>
+     <p><strong>Student Names and Roll Numbers:</strong>
+      <ol>
+         <li>Madhura Wagholikar: 70</li>
+         <li>Pratiksha Patil: 46</li>
+         <li>Raju Ukirade: 66</li>
+      </ol>
+    </p>
+    </div>
+
+     <!-- Index Section -->
+    <div class="section mb-4">
+     <h3>Index Sheet</h3>
+     <ul>
+        <li>Introduction and Objective</li>
+        <li>Field Visit and Information Gathering</li>
+        <li>Entity-Relationship (ER) Diagram</li>
+        <li>Data Model</li>
+        <li>User Interface Design</li>
+     </ul>
+    </div>
+    
+    <!-- Introduction Section -->
+    <div class="section mb-4">
+     <h3>Introduction and Objective of Field Project</h3>
+     <p><strong>Introduction:</strong> This project report details the experience and findings from a field visit to a Samsung store.Samsung is a leading electronics brand with a strong retail presence. The purpose of this visit was to observe store layout, product range, customer interaction, and to gather data for creating a model that represents store processes.</p>
+     <p><strong>Objective:</strong> The objective of this project is to understand how a Samsung store operates, identify key processes and components, and develop a system that can digitally represent store functionalities using a database, ER diagrams, and a basic user interface design.</p>
+    </div>
+
+    <!-- Field Visit Section -->
+    <div class="section mb-4">
+     <h3>Field Visit and Information Gathering</h3>
+     <p>To collect detailed information about Samsung products, pricing, promotions, and store layout.</p>
+     <p><strong>Date:</strong> 7th November 2024</p>
+     <p><strong>Time:</strong> 11:00 AM</p>
+     <p><strong>Location:</strong> Samsung Store, Dhole Patil Road</p>
+     <p><strong>Observations:</strong></p>
+     <ul>
+        <li>Product display and categorization</li>
+        <li>Customer interaction with sales staff</li>
+        <li>Payment processing</li>
+        <li>Product demonstration areas</li>
+     </ul>
+    </div>
+      
+    <!-- ER Diagram Section -->
+   <div class="section mb-4">
+     <h3> Entity-Relationship (ER) Diagram</h3>
+     <p>Entities:</p>
+        <ol>
+           <li>Customer: Stores customer data like Customer ID, Name, Contact.</li>
+           <li>Product: Contains details about products, including Product ID, Name, Category, Price, and Stock.</li>
+           <li>Transaction: Represents sales transactions, with fields like Transaction ID, Date, Customer ID, Product ID, Quantity, and Total Price.</li>
+           <li> Staff: Contains details of store employees with fields such as Staff ID, Name, and Position.</li>
+        </ol>
+
+     <p>Relationships:</p>
+        <ol>
+           <li>Customer - Transaction: A customer can make multiple transactions.</li>
+           <li>Product - Transaction: A transaction involves one or multiple products.</li>
+           <li>Staff - Transaction: A staff member processes the transaction.</li>
+        </ol>
+
+     <p><strong>ER Diagram:</strong></p>
+     <img src="Images/Untitled Diagram.drawio.png" alt="ER Diagram" class="img-fluid">
+   </div>
+
+   <!-- Data Model Section  -->
+   <div class="section mb-4">
+        <h3>Database Model</h3>
+        <!-- Customer Table Structure -->
+    <div class="mb-4">
+        <img src="Images/data.drawio.png" alt="ER Diagram" class="img-fluid">   
+</div>
+  
+<div class="section mb-4">
+<h3>Stakeholders and Their Tasks</h3>
+
+<p>Customers<br>Tasks: Browse products, purchase items, provide feedback, and make inquiries.</p>
+
+<p>Product<br>Tasks: Represent details like name, category, price, and stock availability,Link products to transactions for customer purchases and Update stock levels after transactions.</p>
+
+<p>Transaction<br>Tasks: Record each purchase made by customers, Link customers to the products they buy and Calculate and store total price for each transaction.</p>
+
+<p>Staff<br>Tasks: Assist customers in making informed purchase decisions, Manage and update product inventory, Handle the recording and verification of transactions and Address customer inquiries or issues.</p>
+</div>
+
+<div class="section mb-4">
+   <h3>Store Visit: Question & Answer Series</h3>
+   
+   
+       <h5>1: How long has the store been in operations?</h5>
+       <p>A: The store was established in January 2015 and has been serving customers since then.</p>
+ 
+       <h5>2: What are the most popular products in this store?</h5>
+       <p>A: The most popular products are the latest Samsung smartphones and smart TVs.</p>
+   
+       <h5>3: What services does the store provide besides product sales?</h5>
+       <p>A: Apart from selling products, the store offers product demonstrations, warranty services, and technical support.</p>
+   
+       <h5>4: What are the business hours?</h5>
+       <p>A: From 10:30am to 9:30 pm daily.</p>
+
+       <h5>5: Do you use any Management Software?</h5>
+       <p>A: Yes, it is provided by Samsung for Management and Security purpose.</p>
+
+       <h5>6: Do you Accept mobile payments(e.g., apple pay,Google pay,etc)?</h5>
+       <p>A: Yes, Accept all kinds of payments.</p>
+
+       <h5>7: Do you have an e-commerce website?</h5>
+       <p>A: No, Not yet but have plans to launch in future</p>
+
+       <h5>8: What training programs do you offer for employees?</h5>
+       <p>A: Yes, We offer basic 3monts training program.</p>
+
+       <h5>9: How does the store train its staff on new products?</h5>
+       <p>A: Staff undergo regular training sessions whenever new products are launched to ensure they have up-to-date knowledge for assisting customers.</p>
+
+       <h5>10: What are the future plans for the store?</h5>
+       <p>A: The store plans to expand its service offerings, introduce more smart home products, and enhance the online shopping experience.</p>
+
+</div>
+
+<div class="section mb-4">
+   <h3>Technology and Tools Used</h3>
+   <p>
+       The store utilizes advanced inventory management systems to keep track of stock in real-time. Additionally, there are digital displays
+       that provide product details and promotions, as well as self-service kiosks where customers can check prices and availability.
+       This technology enhances customer experience and streamlines store operations.
+   </p>
+</div>
+
+<div class="section mb-4">
+   <h3>Conclusion and Personal Takeaways</h3>
+   <p>
+       The field visit to the Samsung store was a valuable learning experience. Observing the store operations, customer interactions,
+       and advanced technology used in a retail setting provided practical insights beyond theoretical knowledge. This visit has broadened
+       my understanding of how retail environments operate and the importance of customer-centric design in the tech industry.
+   </p>
+</div>
+
+<div class="section mb-4">
+   <h3>Photo Gallery</h3>
+   <div class="row">
+       <div class="col-md-4">
+           <img src="Images/s1.jpeg" alt="Store Visit Photo 1" class="img-fluid mb-3">
+       </div>
+       <div class="col-md-4">
+           <img src="Images/s2.jpeg" alt="Store Visit Photo 2" class="img-fluid mb-3">
+       </div>
+       <div class="col-md-4">
+           <img src="Images/s3.jpeg" alt="Store Visit Photo 3" class="img-fluid mb-3">
+       </div>
+   </div>
+</div>
+
+<div class="section mb-4">
+<h3>Products displayed in the Store</h3>
+<div class="row">
+    <div class="col-md-4">
+        <img src="Images/p1.jpeg" alt="Store Photo 1" class="img-fluid mb-3">
+    </div>
+    <div class="col-md-4">
+        <img src="Images/p2.jpeg" alt="Store Photo 2" class="img-fluid mb-3">
+    </div>
+    <div class="col-md-4">
+        <img src="Images/p3.jpeg" alt="Store Photo 3" class="img-fluid mb-3">
+    </div>
+    <div class="col-md-4">
+        <img src="Images/p4.jpeg" alt="Store Photo 4" class="img-fluid mb-3">
+    </div>
+    <div class="col-md-4">
+        <img src="Images/p5.jpeg" alt="Store Photo 5" class="img-fluid mb-3">
+    </div>
+    <div class="col-md-4">
+        <img src="Images/p6.jpeg" alt="Store Photo 6" class="img-fluid mb-3">
+    </div>
+    <div class="col-md-4">
+        <img src="Images/p7.jpeg" alt="Store Photo 7" class="img-fluid mb-3">
+    </div>
+    <div class="col-md-4">
+        <img src="Images/p8.jpeg" alt="Store Photo 8" class="img-fluid mb-3">
+    </div>
+</div>
+</div>
+
+<div class="section mb-4">
+ <h3>User Interface Design</h3>
+ 
+      <h5>Product Information</h5>
+        <form>
+          <label for="product">Select a Product:</label>
+          <select id="product">
+            <option value="">Select</option>
+            <option value="Samsung galaxy-s24">Galaxy S24</option>
+            <option value="Samsung galaxy-z-flip5">Galaxy Z Flip5</option>
+            <option value="Samsung galaxy-watch6">Galaxy Watch6</option>
+            <option value="Samsung QLEDTV">Samsung QLEDTV</option>
+          </select>
+          <br>
+
+          <label for="category">Select a Category:</label>
+          <select id="category">
+           <option value="">Select</option>
+           <option value="smartphone">Smartphone</option>
+           <option value="tv">TV</option>
+           <option value="watch">Watch</option>
+         </select>
+         <br>
+          <button type="button" onclick="showDescription()">Submit</button>
+        </form>
+    
+        <div id="product-description"></div>
+      </div>
+    
+      <script>
+        function showDescription() {
+          const productSelect = document.getElementById('product');
+          const selectedProduct = productSelect.value;
+          const descriptionDiv = document.getElementById('product-description');
+    
+          switch (selectedProduct) {
+            case 'Samsung galaxy-s24':
+              descriptionDiv.textContent = 'Samsung Galaxy S24 5G AI Smart phone , The latest flagship smartphone from Samsung, offering cutting-edge features and performance , Size 8zgB+ 128GB.';
+              break;
+            case 'Samsung galaxy-z-flip5':
+              descriptionDiv.textContent = 'Samsung galaxy-z-flip5 the stylish and compact foldable phone, perfect for on-the-go users 8GBRAM, 512GB stroage.';
+              break;
+            case 'Samsung galaxy-watch6':
+              descriptionDiv.textContent = 'Samsung galaxy-watch6 Classic LTE, The advanced smartwatch that tracks your fitness, health, and more.';
+              break;
+            case 'Samsung QLEDTV':
+               descriptionDiv.textContent = 'Samsung QLEDTV 4K Ultra HD AL mart Neo, High defination smart TV with vibrant colours'
+           default:
+              descriptionDiv.textContent = 'Please select a product.';
+          }
+        }
+      </script>
+</div>
+
+<!-- Footer Section -->
+<footer class="bg-primary text-white text-center py-2">
+        <p>&copy; 2024 Samsung Store Management Project</p>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+</body>
+</html>
